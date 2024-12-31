@@ -6,7 +6,7 @@ public class Player_kari : MonoBehaviour
 {
     private Rigidbody rb;
     private float speed = 5f; // 移動速度
-    private float jumpforce = 5f; // ジャンプの力
+    private float jumpforce = 15f; // ジャンプの力
 
     // Start is called before the first frame update
     void Start()
