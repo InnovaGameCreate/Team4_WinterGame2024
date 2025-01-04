@@ -71,3 +71,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+[*]
+end_of_line = lf    # LF を使用
+charset = utf-8     # UTF-8 を使用
+
+[*.bat]
+end_of_line = crlf
