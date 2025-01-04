@@ -3,12 +3,18 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public GameObject enemyPrefab;
-
     public Transform[] spawnPoints;
 
     void Start()
     {
-        SpawnEnemies();
+        if (spawnPoints.Length > 0)
+        {
+            SpawnEnemies();
+        }
+        else
+        {
+            Debug.LogWarning("No spawn points assigned.");
+        }
     }
 
     void SpawnEnemies()

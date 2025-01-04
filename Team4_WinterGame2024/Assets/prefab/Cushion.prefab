@@ -15,8 +15,13 @@ GameObject:
   - component: {fileID: -6229906530734946208}
   - component: {fileID: 6508679451003022080}
   m_Layer: 0
+<<<<<<< HEAD:Team4_WinterGame2024/Assets/prefab/Cushion.prefab
   m_Name: Cushion
   m_TagString: Untagged
+=======
+  m_Name: Sphere
+  m_TagString: cushion
+>>>>>>> db4acb4753377c9f73b97247a8fb528d48947ec5:Team4_WinterGame2024/Assets/demo_kai/Sphere.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
