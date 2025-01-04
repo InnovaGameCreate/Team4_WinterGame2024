@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WhenOnFloor : MonoBehaviour
+public class OnFloorup : MonoBehaviour
 {
-    public int scoreValue = 10;
+    public int scoreValue = 100;
     private bool hasScored = false; // スコア取得済みフラグ
 
     private void OnCollisionEnter(Collision collision)
