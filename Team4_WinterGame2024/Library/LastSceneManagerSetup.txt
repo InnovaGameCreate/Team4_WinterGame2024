@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/demo_kai_Player.unity
-=======
-- path: Assets/Scenes/game.unity
->>>>>>> db4acb4753377c9f73b97247a8fb528d48947ec5
+- path: Assets/Scenes/start.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

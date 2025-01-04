@@ -19397,13 +19397,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1442722,
-      "PayloadLength": 32742,
-=======
       "PayloadOffset": 1450069,
       "PayloadLength": 32705,
->>>>>>> db4acb4753377c9f73b97247a8fb528d48947ec5
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "Outputs": [
@@ -19415,11 +19410,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1475551,
-=======
       "PayloadOffset": 1482861,
->>>>>>> db4acb4753377c9f73b97247a8fb528d48947ec5
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -19663,11 +19654,10 @@
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
-        "Assets/demo_kai/Boss.cs",
-        "Assets/script/Cushion/Cushion.cs",
+        "Assets/demo_kai/Cushion.cs",
+        "Assets/demo_kai/PlayerMove.cs",
         "Assets/script/Enemy/Enemy1.cs",
         "Assets/script/Enemy/EnemyManager.cs",
-        "Assets/script/Player/PlayerMove.cs",
         "Assets/script/scene/SceneManagement.cs",
         "Assets/script/Score/gamesceneplayer/Player_kari.cs",
         "Assets/script/Score/ScoreManager.cs",
@@ -19910,11 +19900,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1475647,
-=======
       "PayloadOffset": 1482957,
->>>>>>> db4acb4753377c9f73b97247a8fb528d48947ec5
       "PayloadLength": 9366,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
