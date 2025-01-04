@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/demo_kai/demo_kai.unity
+- path: Assets/Scenes/demo_kai_Player.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
