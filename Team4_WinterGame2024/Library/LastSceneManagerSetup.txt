@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Scenes/game.unity
+=======
+- path: "Assets/Scenes/game\u30B3\u30F3\u30D5\u30EA\u30AF\u30C8\u9632\u6B62.unity"
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
