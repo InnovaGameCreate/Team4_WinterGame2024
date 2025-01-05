@@ -19301,12 +19301,6 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1441512,
       "PayloadLength": 32606,
-<<<<<<< Updated upstream
-=======
-=======
-      "PayloadLength": 32833,
->>>>>>> Stashed changes
->>>>>>> Stashed changes
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "Outputs": [
@@ -19319,12 +19313,6 @@
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
       "PayloadOffset": 1474205,
-<<<<<<< Updated upstream
-=======
-=======
-      "PayloadOffset": 1474432,
->>>>>>> Stashed changes
->>>>>>> Stashed changes
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -19570,12 +19558,6 @@
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
         "Assets/script/Enemy/Enemy1.cs",
         "Assets/script/scene/SceneManagement.cs",
-<<<<<<< Updated upstream
-=======
-        "Assets/script/Score/gamesceneplayer/Bounce.cs",
-        "Assets/script/Score/gamesceneplayer/CameraMove.cs",
-        "Assets/script/Score/gamesceneplayer/OnFloor.cs",
->>>>>>> Stashed changes
         "Assets/script/Score/gamesceneplayer/Player_kari.cs",
         "Assets/script/Score/ScoreManager.cs",
         "Assets/script/Score/WhenOnFloor.cs",
@@ -19818,12 +19800,6 @@
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 1474301,
-<<<<<<< Updated upstream
-=======
-=======
-      "PayloadOffset": 1474528,
->>>>>>> Stashed changes
->>>>>>> Stashed changes
       "PayloadLength": 9366,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],

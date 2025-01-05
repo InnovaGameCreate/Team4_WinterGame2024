@@ -18,14 +18,6 @@ Logs/AssetImportWorker1.log
 54637
 Successfully changed project path to: C:/GitHub/Team4_WinterGame2024/Team4_WinterGame2024
 C:/GitHub/Team4_WinterGame2024/Team4_WinterGame2024
-<<<<<<< Updated upstream
-=======
-=======
-56634
-Successfully changed project path to: C:/Users/PC_User/Desktop/ã‚²ãƒ¼ã‚¯ãƒªç”¨ã€€ãƒ•ã‚©ãƒ«ãƒ€/Team4/Team4_WinterGame2024/Team4_WinterGame2024
-C:/Users/PC_User/Desktop/ã‚²ãƒ¼ã‚¯ãƒªç”¨ã€€ãƒ•ã‚©ãƒ«ãƒ€/Team4/Team4_WinterGame2024/Team4_WinterGame2024
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -63,17 +55,6 @@ Player connection [7152] Host "[IP] 192.168.177.1 [Port] 0 [Flags] 2 [Guid] 7181
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
 Refreshing native plugins compatible for Editor in 39.35 ms, found 3 plugins.
-<<<<<<< Updated upstream
-=======
-=======
-Player connection [3820] Host "[IP] 192.168.11.1 [Port] 0 [Flags] 2 [Guid] 307330110 [EditorId] 307330110 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SV6VD9F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-
-Player connection [3820] Host "[IP] 192.168.11.1 [Port] 0 [Flags] 2 [Guid] 307330110 [EditorId] 307330110 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SV6VD9F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
-
-[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Refreshing native plugins compatible for Editor in 6.96 ms, found 3 plugins.
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.26f1 (ec6cd8118806)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -90,37 +71,16 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Manage
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/MonoBleedingEdge/etc'
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
-<<<<<<< Updated upstream
-=======
-=======
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56228
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Registered in 0.014168 seconds.
 - Loaded All Assemblies, in  0.751 seconds
-<<<<<<< Updated upstream
-=======
-=======
-Registered in 0.010009 seconds.
-- Loaded All Assemblies, in  0.273 seconds
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.540 seconds
 Domain Reload Profiling: 1290ms
 	BeginReloadAssembly (276ms)
-<<<<<<< Updated upstream
-=======
-=======
-- Finished resetting the current domain, in  0.199 seconds
-Domain Reload Profiling: 470ms
-	BeginReloadAssembly (84ms)
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -138,23 +98,6 @@ Domain Reload Profiling: 470ms
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (2ms)
 	FinalizeReload (541ms)
-<<<<<<< Updated upstream
-=======
-=======
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (103ms)
-		LoadAssemblies (83ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (101ms)
-			TypeCache.Refresh (100ms)
-				TypeCache.ScanAssembly (89ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (200ms)
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (422ms)
@@ -165,14 +108,6 @@ Domain Reload Profiling: 470ms
 			BeforeProcessingInitializeOnLoad (4ms)
 			ProcessInitializeOnLoadAttributes (279ms)
 			ProcessInitializeOnLoadMethodAttributes (104ms)
-<<<<<<< Updated upstream
-=======
-=======
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (106ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -182,13 +117,6 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 - Loaded All Assemblies, in  1.437 seconds
 Refreshing native plugins compatible for Editor in 16.25 ms, found 3 plugins.
-<<<<<<< Updated upstream
-=======
-=======
-- Loaded All Assemblies, in  0.470 seconds
-Refreshing native plugins compatible for Editor in 3.62 ms, found 3 plugins.
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  1.140 seconds
@@ -232,52 +160,6 @@ Unloading 3109 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 34 unused Assets / (57.4 KB). Loaded Objects now: 3570.
 Memory consumption went from 121.7 MB to 121.7 MB.
 Total: 6.098600 ms (FindLiveObjects: 0.372300 ms CreateObjectMapping: 0.192600 ms MarkObjects: 5.311500 ms  DeleteObjects: 0.219700 ms)
-<<<<<<< Updated upstream
-=======
-=======
-- Finished resetting the current domain, in  0.440 seconds
-Domain Reload Profiling: 907ms
-	BeginReloadAssembly (109ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (295ms)
-		LoadAssemblies (239ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (121ms)
-			TypeCache.Refresh (107ms)
-				TypeCache.ScanAssembly (96ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (441ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (334ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (46ms)
-			ProcessInitializeOnLoadAttributes (256ms)
-			ProcessInitializeOnLoadMethodAttributes (15ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 2.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3112 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (57.5 KB). Loaded Objects now: 3573.
-Memory consumption went from 122.4 MB to 122.4 MB.
-Total: 2.576600 ms (FindLiveObjects: 0.155800 ms CreateObjectMapping: 0.039200 ms MarkObjects: 2.280700 ms  DeleteObjects: 0.099900 ms)
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -293,54 +175,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
-========================================================================
-Received Import Request.
-  Time since last request: 228803.059551 seconds.
-  path: Assets/demo_kai/Sphere.prefab
-  artifactKey: Guid(0d3e64a48538d784cb094dc1e19bbea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/demo_kai/Sphere.prefab using Guid(0d3e64a48538d784cb094dc1e19bbea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17b3f9c2a0538ceeb1c58187fec4c95') in 0.009010 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 4.399234 seconds.
-  path: Assets/demo_kai/Assets/eye Base Color.png
-  artifactKey: Guid(ce96cbd2e356bd84f881960cff719c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/demo_kai/Assets/eye Base Color.png using Guid(ce96cbd2e356bd84f881960cff719c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d5c243fbf3ba1f9b43844506cae92a') in 0.037550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.263231 seconds.
-  path: Assets/demo_kai/Assets/ã­ã‚€ã‚Šå›(æŠ•ã’ã‚‹).fbx
-  artifactKey: Guid(42d73758eea40ce42bb5d2c4cf1865a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/demo_kai/Assets/ã­ã‚€ã‚Šå›(æŠ•ã’ã‚‹).fbx using Guid(42d73758eea40ce42bb5d2c4cf1865a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfba957b435ee4b432b02c93d5ba42bb') in 0.268535 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 74
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/demo_kai/Assets/ã­ã‚€ã‚Šå›(ç€åœ°).fbx
-  artifactKey: Guid(e63a9693da073e3449bb7e8c86b5292b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/demo_kai/Assets/ã­ã‚€ã‚Šå›(ç€åœ°).fbx using Guid(e63a9693da073e3449bb7e8c86b5292b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d916e745d7069afc764d1f4dd386ce6') in 0.120566 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 74
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/demo_kai/Assets/ãƒžãƒ†ãƒªã‚¢ãƒ«.003 Base Color.png
-  artifactKey: Guid(fe9f0ecb86238e048afe80439dcc5827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/demo_kai/Assets/ãƒžãƒ†ãƒªã‚¢ãƒ«.003 Base Color.png using Guid(fe9f0ecb86238e048afe80439dcc5827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df828d5971b3629f9c6272d2aba5503') in 0.005890 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ƒXƒŒƒbƒh‚ÌI—¹‚Ü‚½‚ÍƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ì—v‹‚É‚æ‚Á‚ÄAI/O ˆ—‚Í’†Ž~‚³‚ê‚Ü‚µ‚½B
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
->>>>>>> Stashed changes
->>>>>>> Stashed changes

@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< Updated upstream
   tags: []
-=======
-  tags:
-  - player
-  - cushion
-  - Floor
-  - BounceFloor
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
