@@ -3,22 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
-    private int score;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int score=0;
+    public Text scoreText;
 
     private void Awake()
     {
@@ -30,10 +21,13 @@ public class ScoreManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        UpdateScoreDisplay();
     }
-    public void AddScore(int value)
+    public void UpdateScoreDisplay()
     {
-        score += value;
-        Debug.Log("Current Score" + score);
+        if (scoreText != null)
+        {
+            scoreText.text = "Score: " + score.ToString();
+        }
     }
 }

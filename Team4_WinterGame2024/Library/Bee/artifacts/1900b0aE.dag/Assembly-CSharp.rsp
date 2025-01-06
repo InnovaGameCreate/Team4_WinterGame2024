@@ -357,9 +357,11 @@
 "Assets/script/Enemy/Enemy1.cs"
 "Assets/script/Enemy/EnemyManager.cs"
 "Assets/script/scene/SceneManagement.cs"
+"Assets/script/Score/gamesceneplayer/Bounce.cs"
+"Assets/script/Score/gamesceneplayer/CameraMove.cs"
+"Assets/script/Score/gamesceneplayer/OnFloor.cs"
 "Assets/script/Score/gamesceneplayer/Player_kari.cs"
-"Assets/script/Score/ScoreManager.cs"
-"Assets/script/Score/WhenOnFloor.cs"
+"Assets/script/Score/gamesceneplayer/ScoreManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+
