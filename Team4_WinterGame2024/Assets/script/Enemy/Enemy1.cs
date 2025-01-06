@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Enemy1 : MonoBehaviour
 {
@@ -17,11 +18,21 @@ public class Enemy1 : MonoBehaviour
 
         foreach (Collider collider in hitColliders)
         {
-            if (collider.CompareTag("cushion") || collider.CompareTag("player"))
+            if (collider.CompareTag("cushion"))
             {
+                ScoreManager.Instance.score += 400;
+                Debug.Log("Cushion hit! Score: " + 400);
                 Destroy(gameObject);
                 break;
             }
+            else if (collider.CompareTag("player"))
+            {
+                ScoreManager.Instance.score -= 200;
+                Debug.Log("Player hit! Score: " + -200);
+                Destroy(gameObject);
+                break;
+            }
+            ScoreManager.Instance.UpdateScoreDisplay();
         }
     }
 }

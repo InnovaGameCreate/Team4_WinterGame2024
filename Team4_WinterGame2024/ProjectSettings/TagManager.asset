@@ -6,6 +6,8 @@ TagManager:
   tags:
   - player
   - cushion
+  - BounceFloor
+  - CrumblingFloor
   layers:
   - Default
   - TransparentFX
