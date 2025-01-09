@@ -1,14 +1,28 @@
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class Enemy1 : MonoBehaviour
 {
-    public float moveSpeed = 2.0f;  
-    public float destroyDistance = 0.5f;  
+    public float moveSpeed = 2.0f;
+    public float destroyDistance = 0.5f;
+    public float moveDistance = 5.0f;  
+    private Vector3 startPosition;     
+    private Vector3 direction = Vector3.left;  
+
+    void Start()
+    {
+        startPosition = transform.position;
+    }
 
     void Update()
     {
-        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+        transform.Translate(direction * moveSpeed * Time.deltaTime);
+
+        if (Vector3.Distance(startPosition, transform.position) >= moveDistance)
+        {
+            direction = -direction;
+            startPosition = transform.position;
+        }
+
         CheckCollision();
     }
 
