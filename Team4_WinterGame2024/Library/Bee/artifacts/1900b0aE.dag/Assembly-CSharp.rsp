@@ -357,6 +357,7 @@
 "Assets/demo_kai/PlayerMove.cs"
 "Assets/script/Enemy/Enemy1.cs"
 "Assets/script/Enemy/EnemyManager.cs"
+"Assets/script/gamescene/BGMManager.cs"
 "Assets/script/gamescene/Bounce.cs"
 "Assets/script/gamescene/BreakCrumblingFloor.cs"
 "Assets/script/gamescene/CameraMove.cs"
