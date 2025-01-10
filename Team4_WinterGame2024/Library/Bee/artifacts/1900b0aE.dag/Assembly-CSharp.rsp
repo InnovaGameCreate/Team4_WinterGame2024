@@ -356,10 +356,13 @@
 "Assets/demo_kai/PlayerMove.cs"
 "Assets/script/Enemy/Enemy1.cs"
 "Assets/script/Enemy/EnemyManager.cs"
+"Assets/script/gamescene/Bounce.cs"
+"Assets/script/gamescene/BreakCrumblingFloor.cs"
+"Assets/script/gamescene/CameraMove.cs"
+"Assets/script/gamescene/OnFloor.cs"
+"Assets/script/gamescene/Player_kari.cs"
+"Assets/script/gamescene/ScoreManager.cs"
 "Assets/script/scene/SceneManagement.cs"
-"Assets/script/Score/gamesceneplayer/Player_kari.cs"
-"Assets/script/Score/ScoreManager.cs"
-"Assets/script/Score/WhenOnFloor.cs"
 -langversion:9.0
 /deterministic
 /optimize+
