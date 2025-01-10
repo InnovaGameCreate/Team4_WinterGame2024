@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     public Transform player;  // プレイヤーのTransformを指定する
-    public float fixedY = 5f; // 固定したいy座標
+    public float fixedY = 4f; // 固定したいy座標
     public float minX; // x座標の最小値
     public float maxX; // x座標の最大値
 
