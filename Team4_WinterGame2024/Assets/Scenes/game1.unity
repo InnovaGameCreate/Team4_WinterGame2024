@@ -2697,13 +2697,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564a95b2047a297458c288e40f7c17ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerspeed: 7
+  playerspeed: 8
   jumpCoolTime: 0
   jumpPower: 10
   cushionPrefab: {fileID: 5056626677835523629, guid: e2841a99273c38641adb59458a16afe7, type: 3}
   damegeCoolTime: 0
   cushionCoolTime: 0
-  launchAngle: 10
+  launchAngle: 5
 --- !u!136 &1019463035
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3241,7 +3241,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
