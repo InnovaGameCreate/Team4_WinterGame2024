@@ -4,12 +4,12 @@ using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class Player_game1 : MonoBehaviour
 {
     private Animator animator;
-    public Text statusText;
+
 
     private float horizontalInput;
     [SerializeField] public float playerspeed;
@@ -44,9 +44,6 @@ public class Player_game1 : MonoBehaviour
         Cushion();
         Damage();
         Rotate();
-        
-        statusText.text = $"hasRotatedNegative: {hasRotatedNegative}\n" +
-                          $"hasRotatedPositive: {hasRotatedPositive}";
 }
 
     //衝突した相手が「Enemy」タグを持つ場合、ダメージ処理
