@@ -8,6 +8,7 @@ TagManager:
   - cushion
   - BounceFloor
   - CrumblingFloor
+  - Enemy
   layers:
   - Default
   - TransparentFX
