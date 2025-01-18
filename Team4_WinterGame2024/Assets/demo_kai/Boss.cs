@@ -16,10 +16,6 @@ public class Boss : MonoBehaviour
     public float attackTimer;
     public float attackTime;
 
-    private GameObject attack1_2JudgeObject;
-    private Attack1_2Judgement attack1_2JudgeScript;
-
-
     public int bossHp;
     public int currentBossHp;
     //private int bossState;
@@ -35,11 +31,6 @@ public class Boss : MonoBehaviour
         bossRb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         currentBossHp = bossHp;
-
-        //1-2attack
-        attack1_2JudgeObject = GameObject.Find("Attack1_2judgeObject");
-        attack1_2JudgeScript = attack1_2JudgeObject.GetComponent<Attack1_2Judgement>();
-        
     }
 
     // Update is called once per frame
@@ -60,6 +51,31 @@ public class Boss : MonoBehaviour
         if(currentBossHp==0)
         {
             Debug.Log("KILL");
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Attack1_1();
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Attack1_2();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Attack2_1();
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            Attack2_2();
+        }
+        if(Input.GetKeyDown(KeyCode.Y))
+        {
+            animator.SetTrigger("change");
+            attackTimer -= 3;
+        }
+        if (currentBossHp==0)
+        {
+            Destroy(this.gameObject);
         }
     }
 
@@ -139,14 +155,6 @@ public class Boss : MonoBehaviour
     {
         //animation
         animator.SetTrigger("1o2");
-        Invoke("Attack1_2Judge", 2.50f);
-    }
-    private void Attack1_2Judge()
-    {
-        if(attack1_2JudgeScript.Judge()==true)
-        {
-            //
-        }
     }
     private void Attack2_1()
     {
