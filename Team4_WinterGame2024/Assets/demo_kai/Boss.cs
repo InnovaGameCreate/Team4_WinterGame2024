@@ -61,31 +61,6 @@ public class Boss : MonoBehaviour
         {
             Debug.Log("KILL");
         }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Attack1_1();
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Attack1_2();
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Attack2_1();
-        }
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            Attack2_2();
-        }
-        if(Input.GetKeyDown(KeyCode.Y))
-        {
-            animator.SetTrigger("change");
-            attackTimer -= 3;
-        }
-        if (currentBossHp==0)
-        {
-            Destroy(this.gameObject);
-        }
     }
 
     private void OnTriggerEnter(Collider other)
