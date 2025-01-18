@@ -14,6 +14,7 @@ public class Enemy2 : MonoBehaviour
         StartCoroutine(JumpRoutine());
     }
 
+
     IEnumerator JumpRoutine()
     {
         while (true)
@@ -37,7 +38,7 @@ public class Enemy2 : MonoBehaviour
             {
                 ScoreManager.Instance.score += 600;
                 Debug.Log("Cushion hit! Score: " + 600);
-                Destroy(collider.gameObject); // cushionƒIƒuƒWƒFƒNƒg‚ğíœ
+                Destroy(collider.gameObject); // cushionï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½íœ
                 scoreUpdated = true;
                 break;
             }
@@ -54,7 +55,23 @@ public class Enemy2 : MonoBehaviour
         if (scoreUpdated)
         {
             ScoreManager.Instance.UpdateScoreDisplay();
-            Destroy(gameObject); // EnemyƒIƒuƒWƒFƒNƒg‚ğíœ
+            Destroy(gameObject); // Enemyï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½íœ
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("cushion"))
+        {
+            Destroy(gameObject); 
+        }
+    }
+
+    IEnumerator JumpRoutine()
+    {
+        while (true)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            yield return new WaitForSeconds(jumpInterval);
+
         }
     }
 }

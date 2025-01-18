@@ -1,27 +1,29 @@
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class Enemy1 : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    public float moveSpeed = 2.0f;  
-    public float destroyDistance = 0.5f;  
-=======
+
     public float moveSpeed = 2.0f;
     public float destroyDistance = 0.5f;
-    public float moveDistance = 5.0f;
-    private Vector3 startPosition;
-    private Vector3 direction = Vector3.left;
+    public float moveDistance = 5.0f;  
+    private Vector3 startPosition;     
+    private Vector3 direction = Vector3.left;  
 
     void Start()
     {
         startPosition = transform.position;
     }
->>>>>>> Stashed changes
 
     void Update()
     {
-        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+        transform.Translate(direction * moveSpeed * Time.deltaTime);
+
+        if (Vector3.Distance(startPosition, transform.position) >= moveDistance)
+        {
+            direction = -direction;
+            startPosition = transform.position;
+        }
+
         CheckCollision();
     }
 
@@ -36,11 +38,11 @@ public class Enemy1 : MonoBehaviour
             {
                 ScoreManager.Instance.score += 400;
                 Debug.Log("Cushion hit! Score: +400");
-                Destroy(collider.gameObject); // cushionƒIƒuƒWƒFƒNƒg‚ğíœ
+                Destroy(collider.gameObject); // cushionï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½íœ
                 scoreUpdated = true;
                 break;
             }
-            else if (collider.CompareTag("player"))
+            else if (collider.CompareTag("Player"))
             {
                 ScoreManager.Instance.score -= 200;
                 Debug.Log("Player hit! Score: -200");
@@ -52,7 +54,7 @@ public class Enemy1 : MonoBehaviour
         if (scoreUpdated)
         {
             ScoreManager.Instance.UpdateScoreDisplay();
-            Destroy(gameObject); // EnemyƒIƒuƒWƒFƒNƒg‚ğíœ
+            Destroy(gameObject); // Enemyï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½íœ
         }
     }
 }
