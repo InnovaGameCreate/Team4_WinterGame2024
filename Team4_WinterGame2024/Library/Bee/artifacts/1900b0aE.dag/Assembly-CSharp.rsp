@@ -367,6 +367,7 @@
 "Assets/script/gamescene/OnFloor.cs"
 "Assets/script/gamescene/Player_game1.cs"
 "Assets/script/gamescene/Player_kari.cs"
+"Assets/script/gamescene/ResultManager.cs"
 "Assets/script/gamescene/ScoreManager.cs"
 "Assets/script/scene/SceneManagement.cs"
 -langversion:9.0
