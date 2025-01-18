@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Enemy1 : MonoBehaviour
 {
+
     public float moveSpeed = 2.0f;
     public float destroyDistance = 0.5f;
     public float moveDistance = 5.0f;  
@@ -29,24 +30,31 @@ public class Enemy1 : MonoBehaviour
     void CheckCollision()
     {
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, destroyDistance);
+        bool scoreUpdated = false;
 
         foreach (Collider collider in hitColliders)
         {
             if (collider.CompareTag("cushion"))
             {
                 ScoreManager.Instance.score += 400;
-                Debug.Log("Cushion hit! Score: " + 400);
-                Destroy(gameObject);
+                Debug.Log("Cushion hit! Score: +400");
+                Destroy(collider.gameObject); // cushion�I�u�W�F�N�g���폜
+                scoreUpdated = true;
                 break;
             }
             else if (collider.CompareTag("Player"))
             {
                 ScoreManager.Instance.score -= 200;
-                Debug.Log("Player hit! Score: " + -200);
-                Destroy(gameObject);
+                Debug.Log("Player hit! Score: -200");
+                scoreUpdated = true;
                 break;
             }
+        }
+
+        if (scoreUpdated)
+        {
             ScoreManager.Instance.UpdateScoreDisplay();
+            Destroy(gameObject); // Enemy�I�u�W�F�N�g���폜
         }
     }
 }
