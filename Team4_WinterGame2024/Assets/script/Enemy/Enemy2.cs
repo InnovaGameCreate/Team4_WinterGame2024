@@ -14,7 +14,6 @@ public class Enemy2 : MonoBehaviour
         StartCoroutine(JumpRoutine());
     }
 
-<<<<<<< Updated upstream
 
     IEnumerator JumpRoutine()
     {
@@ -66,8 +65,6 @@ public class Enemy2 : MonoBehaviour
         }
     }
 
-=======
->>>>>>> Stashed changes
     IEnumerator JumpRoutine()
     {
         while (true)
@@ -75,41 +72,6 @@ public class Enemy2 : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
             yield return new WaitForSeconds(jumpInterval);
 
-        }
-    }
-    void Update()
-    {
-        CheckCollision();
-    }
-    void CheckCollision()
-    {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, destroyDistance);
-        bool scoreUpdated = false;
-
-        foreach (Collider collider in hitColliders)
-        {
-            if (collider.CompareTag("cushion"))
-            {
-                ScoreManager.Instance.score += 600;
-                Debug.Log("Cushion hit! Score: " + 600);
-                Destroy(collider.gameObject); // cushionオブジェクトを削除
-                scoreUpdated = true;
-                break;
-            }
-            else if (collider.CompareTag("player"))
-            {
-                ScoreManager.Instance.score -= 400;
-                Debug.Log("Player hit! Score: " + -400);
-                Destroy(gameObject);
-                break;
-            }
-            ScoreManager.Instance.UpdateScoreDisplay();
-        }
-
-        if (scoreUpdated)
-        {
-            ScoreManager.Instance.UpdateScoreDisplay();
-            Destroy(gameObject); // Enemyオブジェクトを削除
         }
     }
 }
