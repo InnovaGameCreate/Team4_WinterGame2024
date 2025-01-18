@@ -5,9 +5,9 @@ public class Enemy1 : MonoBehaviour
 
     public float moveSpeed = 2.0f;
     public float destroyDistance = 0.5f;
-    public float moveDistance = 5.0f;  
-    private Vector3 startPosition;     
-    private Vector3 direction = Vector3.left;  
+    public float moveDistance = 5.0f;
+    private Vector3 startPosition;
+    private Vector3 direction = Vector3.left;
 
     void Start()
     {
@@ -38,11 +38,15 @@ public class Enemy1 : MonoBehaviour
             {
                 ScoreManager.Instance.score += 400;
                 Debug.Log("Cushion hit! Score: +400");
+<<<<<<< Updated upstream
                 Destroy(collider.gameObject); // cushionï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½íœ
+=======
+                Destroy(collider.gameObject); // cushionƒIƒuƒWƒFƒNƒg‚ðíœ
+>>>>>>> Stashed changes
                 scoreUpdated = true;
                 break;
             }
-            else if (collider.CompareTag("Player"))
+            else if (collider.CompareTag("player"))
             {
                 ScoreManager.Instance.score -= 200;
                 Debug.Log("Player hit! Score: -200");
@@ -54,7 +58,11 @@ public class Enemy1 : MonoBehaviour
         if (scoreUpdated)
         {
             ScoreManager.Instance.UpdateScoreDisplay();
+<<<<<<< Updated upstream
             Destroy(gameObject); // Enemyï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½íœ
+=======
+            Destroy(gameObject); // EnemyƒIƒuƒWƒFƒNƒg‚ðíœ
+>>>>>>> Stashed changes
         }
     }
 }
