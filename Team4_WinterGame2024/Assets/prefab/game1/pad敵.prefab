@@ -58,11 +58,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 326bf104885d33040b1796d52605d9f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 462686c2a9b295d4bbedebf31882a610, type: 3}
       propertyPath: m_Name
-      value: "pad\u6575\uFF08\u30B8\u30E3\u30F3\u30D7\u30E2\u30FC\u30B7\u30E7\u30F3\u8FBC\uFF09"
+      value: "pad\u6575"
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 462686c2a9b295d4bbedebf31882a610, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -73,13 +73,13 @@ PrefabInstance:
       addedObject: {fileID: 6867118297069970280}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 462686c2a9b295d4bbedebf31882a610, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4642517730728367219}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 462686c2a9b295d4bbedebf31882a610, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6468977308746890808}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 462686c2a9b295d4bbedebf31882a610, type: 3}
       insertIndex: -1
       addedObject: {fileID: -2640088687654574496}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 462686c2a9b295d4bbedebf31882a610, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1910393125996277223}
   m_SourcePrefab: {fileID: 100100000, guid: 462686c2a9b295d4bbedebf31882a610, type: 3}
 --- !u!1 &1939382543511879021 stripped
 GameObject:
@@ -113,20 +113,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!114 &4642517730728367219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939382543511879021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0eff97e0688ad34295b83dcea3672c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 17
-  jumpInterval: 4
 --- !u!65 &6468977308746890808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -190,3 +176,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-1910393125996277223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939382543511879021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20216a09a1219b64daea581a774fe2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 15
+  jumpInterval: 4
+  destroyDistance: 0.5
