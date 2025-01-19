@@ -44,10 +44,10 @@ public class Player_game1 : MonoBehaviour
         Cushion();
         Damage();
         Rotate();
-}
+    }
 
     //衝突した相手が「Enemy」タグを持つ場合、ダメージ処理
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(UnityEngine.Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
