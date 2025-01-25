@@ -6,7 +6,7 @@ public class Boss : MonoBehaviour
 {
     static float[][] attackWeight = new float[][]
     {
-        new float[] { 1, 30 },
+        new float[] { 40, 60 },
         new float[] { 40, 40 },
     };
     private int attackKind;
@@ -58,27 +58,6 @@ public class Boss : MonoBehaviour
         {
             Debug.Log("KILL");
         }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Attack1_1();
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Attack1_2();
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Attack2_1();
-        }
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            Attack2_2();
-        }
-        if(Input.GetKeyDown(KeyCode.Y))
-        {
-            animator.SetTrigger("change");
-            attackTimer -= 3;
-        }
         if (currentBossHp==0)
         {
             Destroy(this.gameObject);
@@ -100,6 +79,7 @@ public class Boss : MonoBehaviour
 
     private int BossState()
     {
+        /*
         if (currentBossHp >= 10)
         {
             return 0;
@@ -112,6 +92,8 @@ public class Boss : MonoBehaviour
         {
             return 1;
         }
+        */
+        return 0;
     }
 
     private int ChooseAttacKind(float a,float b)

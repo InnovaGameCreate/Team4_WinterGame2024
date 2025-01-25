@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Attack1_2Judgement : MonoBehaviour
 {
-    private int hit;
+    private bool hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +21,18 @@ public class Attack1_2Judgement : MonoBehaviour
     {
         if (collider.CompareTag("player"))
         {
-            Debug.Log("stay"); 
+            hit = true;
         }
         else
         {
+            hit = false;
         }
     }
     public void Judge()
     {
+        if (hit==true)
+        {
+            Debug.Log("damage");
+        }
     }
 }
