@@ -6,7 +6,7 @@ public class Boss : MonoBehaviour
 {
     static float[][] attackWeight = new float[][]
     {
-        new float[] { 50, 30 },
+        new float[] { 1, 30 },
         new float[] { 40, 40 },
     };
     private int attackKind;
@@ -15,6 +15,9 @@ public class Boss : MonoBehaviour
     public float attackCoolTimeMax;
     public float attackTimer;
     public float attackTime;
+
+    public GameObject attack1_2JudgementObject;
+    public Attack1_2Judgement attack1_2JudgementScript;
 
     public int bossHp;
     public int currentBossHp;
@@ -31,6 +34,9 @@ public class Boss : MonoBehaviour
         bossRb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         currentBossHp = bossHp;
+
+        attack1_2JudgementObject = GameObject.Find("Attack1_2judgeObject");
+        attack1_2JudgementScript = attack1_2JudgementObject.GetComponent<Attack1_2Judgement>();
     }
 
     // Update is called once per frame
@@ -155,6 +161,11 @@ public class Boss : MonoBehaviour
     {
         //animation
         animator.SetTrigger("1o2");
+        Invoke("Attack1_2Judge", 3.0f);
+    }
+    private void Attack1_2Judge ()
+    {
+        attack1_2JudgementScript.Judge();
     }
     private void Attack2_1()
     {
