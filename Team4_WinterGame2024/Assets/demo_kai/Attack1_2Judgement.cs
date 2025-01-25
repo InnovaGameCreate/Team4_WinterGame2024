@@ -19,7 +19,7 @@ public class Attack1_2Judgement : MonoBehaviour
 
     private void OnTriggerStay(Collider collider)
     {
-        if (CompareTag("player"))
+        if (collider.CompareTag("player"))
         {
             Debug.Log("stay"); 
         }
