@@ -9,6 +9,10 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
     public int score=0;
+    [SerializeField] public int E1score;
+    [SerializeField] public int E2score;
+    [SerializeField] public int E1damege;
+    [SerializeField] public int E2damege;
     public Text scoreText;
 
     private void Awake()

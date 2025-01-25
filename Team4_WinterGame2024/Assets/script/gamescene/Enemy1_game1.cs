@@ -35,7 +35,7 @@ public class Enemy1_game1 : MonoBehaviour
         {
             if (collider.CompareTag("cushion"))
             {
-                ScoreManager.Instance.score += 400;
+                ScoreManager.Instance.score += ScoreManager.Instance.E1score;
                 Debug.Log("Cushion hit! Score: +400");
                 Destroy(collider.gameObject); // cushionオブジェクトを削除
                 scoreUpdated = true;
@@ -43,7 +43,7 @@ public class Enemy1_game1 : MonoBehaviour
             }
             else if (collider.CompareTag("player"))
             {
-                ScoreManager.Instance.score -= 200;
+                ScoreManager.Instance.score -= ScoreManager.Instance.E1damege;
                 Debug.Log("Player hit! Score: -200");
                 scoreUpdated = true;
                 break;

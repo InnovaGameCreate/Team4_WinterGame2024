@@ -34,27 +34,20 @@ public class Enemy2_game1 : MonoBehaviour
         {
             if (collider.CompareTag("cushion"))
             {
-                ScoreManager.Instance.score += 600;
-                Debug.Log("Cushion hit! Score: " + 600);
+                ScoreManager.Instance.score += ScoreManager.Instance.E2score;
+                Debug.Log("Cushion hit!");
                 Destroy(gameObject);
                 Destroy(collider.gameObject); // cushionオブジェクトを削除
                 break;
             }
             else if (collider.CompareTag("player"))
             {
-                ScoreManager.Instance.score -= 400;
-                Debug.Log("Player hit! Score: " + -400);
+                ScoreManager.Instance.score -= ScoreManager.Instance.E2damege;
+                Debug.Log("Player hit!");
                 Destroy(gameObject);
                 break;
             }
             ScoreManager.Instance.UpdateScoreDisplay();
         }
-        /*
-        if (scoreUpdated)
-        {
-            ScoreManager.Instance.UpdateScoreDisplay();
-            Destroy(gameObject); // Enemyオブジェクトを削除
-        }
-        */
     }
 }
