@@ -21,14 +21,14 @@ public class Boss : MonoBehaviour
 
     public int bossHp;
     public int currentBossHp;
-    //private int bossState;
 
     public GameObject[] enemyPrefab;
     private Animator animator;
     private Rigidbody bossRb;
 
+    // Cushionのヒット回数をカウントする変数を追加
+    private int cushionHitCount = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         bossRb = GetComponent<Rigidbody>();
@@ -39,7 +39,6 @@ public class Boss : MonoBehaviour
         attack1_2JudgementScript = attack1_2JudgementObject.GetComponent<Attack1_2Judgement>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (attackTime <= attackTimer)
@@ -47,28 +46,36 @@ public class Boss : MonoBehaviour
             attackTimer = 0;
             attackTime = Random.Range(attackCoolTimeMin, attackCoolTimeMax);
             attackKind = ChooseAttacKind(attackWeight[BossState()][0], attackWeight[BossState()][1]);
-            Attack(BossState(),attackKind);
+            Attack(BossState(), attackKind);
         }
         else
         {
             attackTimer += Time.deltaTime;
         }
-        
-        if(currentBossHp==0)
+
+        if (currentBossHp == 0)
         {
             Debug.Log("KILL");
-        }
-        if (currentBossHp==0)
-        {
             Destroy(this.gameObject);
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(CompareTag("cushion"))
+        
+        if (other.CompareTag("cushion"))
         {
             currentBossHp--;
+            cushionHitCount++; 
+            Debug.Log("Cushion hit count: " + cushionHitCount);
+
+            
+            if (cushionHitCount >= 10)
+            {
+                Debug.Log("Cushion hit 10 times, destroying boss object.");
+                Destroy(this.gameObject);
+            }
+
             if (currentBossHp == 10)
             {
                 animator.SetTrigger("change");
@@ -79,27 +86,13 @@ public class Boss : MonoBehaviour
 
     private int BossState()
     {
-        /*
-        if (currentBossHp >= 10)
-        {
-            return 0;
-        }
-        else if (currentBossHp < 10)
-        {
-            return 1;
-        }
-        else
-        {
-            return 1;
-        }
-        */
-        return 0;
+        return 0; 
     }
 
-    private int ChooseAttacKind(float a,float b)
+    private int ChooseAttacKind(float a, float b)
     {
-        float kind = Random.Range(0, a+b);
-        if ( kind <= a )
+        float kind = Random.Range(0, a + b);
+        if (kind <= a)
         {
             return 0;
         }
@@ -109,55 +102,56 @@ public class Boss : MonoBehaviour
         }
     }
 
-    private void Attack(int a,int b)
+    private void Attack(int a, int b)
     {
         switch (a)
         {
             case 0:
                 switch (b)
                 {
-                    case 0:Attack1_1(); break;
-                    case 1:Attack1_2(); break;
-                    default:return;
+                    case 0: Attack1_1(); break;
+                    case 1: Attack1_2(); break;
+                    default: return;
                 }
                 break;
             case 1:
                 switch (b)
                 {
-                    case 0:Attack2_1(); break;
-                    case 1:Attack2_2(); break;
-                    default:return;
-                }break;
-            default:return;
+                    case 0: Attack2_1(); break;
+                    case 1: Attack2_2(); break;
+                    default: return;
+                }
+                break;
+            default: return;
         }
     }
 
     public void Attack1_1()
     {
-        int enemyPrefabIndex=Random.Range(0,enemyPrefab.Length);
+        int enemyPrefabIndex = Random.Range(0, enemyPrefab.Length);
         Instantiate(enemyPrefab[enemyPrefabIndex], transform.position, enemyPrefab[enemyPrefabIndex].transform.rotation);
         animator.SetTrigger("1o1");
     }
 
-    private void Attack1_2 ()
+    private void Attack1_2()
     {
-        //animation
         animator.SetTrigger("1o2");
         Invoke("Attack1_2Judge", 3.0f);
     }
-    private void Attack1_2Judge ()
+
+    private void Attack1_2Judge()
     {
         attack1_2JudgementScript.Judge();
     }
+
     private void Attack2_1()
     {
-        //animation
         animator.SetTrigger("2o1");
         attackTimer -= 3.0f;
     }
+
     private void Attack2_2()
     {
-        //GameObjectChange
         animator.SetTrigger("2o2");
     }
 }

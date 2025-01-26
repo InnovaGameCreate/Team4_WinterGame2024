@@ -39,7 +39,7 @@ public class Enemy1 : MonoBehaviour
                 Destroy(gameObject);
                 break;
             }
-            else if (collider.CompareTag("Player"))
+            else if (collider.CompareTag("player"))
             {
                 ScoreManager.Instance.score -= 200;
                 Debug.Log("Player hit! Score: " + -200);
