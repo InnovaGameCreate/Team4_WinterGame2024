@@ -5,16 +5,26 @@ using UnityEngine;
 public class Attack1_2Judgement : MonoBehaviour
 {
     private bool hit;
-    // Start is called before the first frame update
+
+    // ScoreManagerのインスタンスを直接操作するためにインスタンス変数を追加
+    private ScoreManager scoreManager;
+
     void Start()
     {
-        
+        hit = false;
+
+        // ScoreManagerインスタンスを直接取得
+        scoreManager = FindObjectOfType<ScoreManager>();
+
+        if (scoreManager == null)
+        {
+            Debug.LogError("ScoreManager not found in the scene!");
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // hit状態が変わった際に即座にスコア変更したい場合
     }
 
     private void OnTriggerStay(Collider collider)
@@ -28,11 +38,23 @@ public class Attack1_2Judgement : MonoBehaviour
             hit = false;
         }
     }
+
     public void Judge()
     {
-        if (hit==true)
+            Debug.Log("Damage dealt to player!");
+        if (hit == true)
         {
-            Debug.Log("damage");
+
+            if (scoreManager != null)
+            {
+                // スコアを減少させる
+                scoreManager.score -= 400;
+                scoreManager.UpdateScoreDisplay();  // スコア表示を更新
+            }
+            else
+            {
+                Debug.LogError("ScoreManager is null! Cannot reduce score.");
+            }
         }
     }
 }

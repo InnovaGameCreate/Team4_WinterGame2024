@@ -6123,6 +6123,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683268775}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1724590044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1724590046}
+  - component: {fileID: 1724590045}
+  m_Layer: 0
+  m_Name: ScoreDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1724590045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724590044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e6e10f0fa4c64c8e36c10288adf07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1769324178}
+--- !u!4 &1724590046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724590044}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 301.91754, y: 34.723946, z: -107.72419}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1732179025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6223,7 +6268,7 @@ MonoBehaviour:
   E2score: 600
   E1damege: 200
   E2damege: 400
-  scoreText: {fileID: 1769324178}
+  scoreText: {fileID: 0}
 --- !u!4 &1748899852
 Transform:
   m_ObjectHideFlags: 0
@@ -6273,8 +6318,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -357.2, y: -258.1}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -257.81677, y: -480.50037}
+  m_SizeDelta: {x: 1171.4279, y: 285.0007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1769324178
 MonoBehaviour:
@@ -6298,11 +6343,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 2230732570650464555, guid: fdc0bc9d7ab389246bb5e029b2c6d0a4, type: 3}
-    m_FontSize: 20
+    m_FontSize: 100
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -7098,3 +7143,4 @@ SceneRoots:
   - {fileID: 792382801}
   - {fileID: 1019463026}
   - {fileID: 991966947}
+  - {fileID: 1724590046}

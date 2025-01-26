@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    static float[][] attackWeight = new float[][]
-    {
+    static float[][] attackWeight = new float[][] {
         new float[] { 40, 60 },
         new float[] { 40, 40 },
     };
+
     private int attackKind;
 
     public float attackCoolTimeMin;
@@ -26,7 +26,6 @@ public class Boss : MonoBehaviour
     private Animator animator;
     private Rigidbody bossRb;
 
-    // Cushionのヒット回数をカウントする変数を追加
     private int cushionHitCount = 0;
 
     void Start()
@@ -56,23 +55,29 @@ public class Boss : MonoBehaviour
         if (currentBossHp == 0)
         {
             Debug.Log("KILL");
+
+            // スコアを1500増加
+            IncreaseScore(1500);
+
             Destroy(this.gameObject);
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        
         if (other.CompareTag("cushion"))
         {
             currentBossHp--;
-            cushionHitCount++; 
+            cushionHitCount++;
             Debug.Log("Cushion hit count: " + cushionHitCount);
 
-            
             if (cushionHitCount >= 10)
             {
                 Debug.Log("Cushion hit 10 times, destroying boss object.");
+
+                // スコアを1500増加
+                IncreaseScore(1500);
+
                 Destroy(this.gameObject);
             }
 
@@ -86,7 +91,7 @@ public class Boss : MonoBehaviour
 
     private int BossState()
     {
-        return 0; 
+        return 0;
     }
 
     private int ChooseAttacKind(float a, float b)
@@ -153,5 +158,20 @@ public class Boss : MonoBehaviour
     private void Attack2_2()
     {
         animator.SetTrigger("2o2");
+    }
+
+    // スコアを増加させる共通メソッド
+    private void IncreaseScore(int amount)
+    {
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.score += amount;
+            ScoreManager.Instance.UpdateScoreDisplay();
+            Debug.Log("Score increased by " + amount + "!");
+        }
+        else
+        {
+            Debug.LogError("ScoreManager.Instance is null! Cannot increase score.");
+        }
     }
 }
